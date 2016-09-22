@@ -9,6 +9,9 @@ body{
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
 }
+a:focus {
+    text-decoration: none;
+}
 section.start{
 	background: url('../img/main-bg.jpg') 0 0 no-repeat;
 	background-size: cover;
@@ -246,10 +249,13 @@ h3:after{
 	float: right;
 }
 .portfolio > h2{
-	padding-bottom: 45px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 }
 .portfolio img{
 	width: 100%;
+	object-fit: cover;
+	height: 14vw;
 }
 .video{
 	width: 100%;
@@ -343,6 +349,9 @@ footer .container{
 .copy a{
 	display: inline-block;
 	margin-left: 10px;
+}
+.services .container .row:last-child .price{
+	padding-bottom: 0;
 }
 /*RESPONSIVE*/
 @media screen and (max-width: 1500px) {

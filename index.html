@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Friends</title>
 
+	<link rel="stylesheet" href="css/colorbox.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,11 +21,11 @@
 					</div>
 					<nav>
 						<ul class="main-nav">
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">Услуги</a></li>
-							<li><a href="#">Портфолио</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">Работа у нас</a></li>
+							<li><a class="scrollto" href="#about">О нас</a></li>
+							<li><a class="scrollto" href="#services">Услуги</a></li>
+							<li><a class="scrollto" href="#portfolio">Портфолио</a></li>
+							<li><a class="scrollto" href="#video">Отзывы</a></li>
+							<li><a class="scrollto" href="#work">Работа у нас</a></li>
 						</ul>
 					</nav>
 					<ul class="social">
@@ -43,7 +44,7 @@
 				<p>и бла бла бла</p>
 			</div>
 		</section>
-		<section class="profession">
+		<section id="about" class="profession">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -53,7 +54,7 @@
 				</div>				
 			</div>
 		</section>
-		<section class="services">
+		<section id="services" class="services">
 			<h2 class="azure">наши услуги</h2>
 			<div class="container p-top">
 				<div class="row">
@@ -172,30 +173,54 @@
 				</div>
 			</div>
 		</section>
-		<section class="portfolio">
+		<section id="portfolio" class="portfolio">
 			<h2 class="white">портфолио</h2>
 			<div class="container">
 				<div class="row p-bot">
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-2.jpg" ><img src="img/img-2.jpg" alt=""></a>
+					</div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-3.jpg" ><img src="img/img-3.jpg" alt=""></a>
+					</div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-4.jpg" ><img src="img/img-4.jpg" alt=""></a>
+					</div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-5.jpg" ><img src="img/img-5.jpg" alt=""></a>
+					</div>
 				</div>
 				<div class="row p-bot">
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-1.jpg" ><img src="img/img-1.jpg" alt=""></a>
+					</div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-1.jpg" ><img src="img/img-1.jpg" alt=""></a>
+					</div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-1.jpg" ><img src="img/img-1.jpg" alt=""></a>
+					</div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-1.jpg" ><img src="img/img-1.jpg" alt=""></a>
+					</div>
 				</div>
 				<div class="row p-bot">
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
-					<div class="col-sm-3"><img src="img/img-1.jpg" alt=""></div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-1.jpg" ><img src="img/img-1.jpg" alt=""></a>
+					</div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-1.jpg" ><img src="img/img-1.jpg" alt=""></a>
+					</div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-1.jpg" ><img src="img/img-1.jpg" alt=""></a>
+					</div>
+					<div class="col-sm-3">
+						<a class="group1 img-box" href="img/img-1.jpg" ><img src="img/img-1.jpg" alt=""></a>
+					</div>
 				</div>
 				<div class="row p-bot">
 					<div class="col-xs-6">
-						<div class="video">
+						<div id="video" class="video">
 							<span>Видео</span>
 						</div>
 					</div>
@@ -265,7 +290,7 @@
 				</div>
 				</div>
 		</section>
-		<section class="work">
+		<section id="work" class="work">
 			<h2 class="white">Работа у нас</h2>
 			<div class="container">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero ea totam provident minima. Quidem distinctio repudiandae, dignissimos voluptas nulla, laborum velit dolores cum itaque fuga, architecto eum iusto ex pariatur quod sapiente amet animi dicta. Sapiente, maiores tempora quod.</p>
@@ -280,11 +305,11 @@
 				</div>
 				<div class="footer-nav">
 					<ul>
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Портфолио</a></li>
-						<li><a href="#">Отзывы</a></li>
-						<li><a href="#">Работа у нас</a></li>
+						<li><a class="scrollto" href="#about">О нас</a></li>
+						<li><a class="scrollto" href="#services">Услуги</a></li>
+						<li><a class="scrollto" href="#portfolio">Портфолио</a></li>
+						<li><a class="scrollto" href="#video">Отзывы</a></li>
+						<li><a class="scrollto" href="#work">Работа у нас</a></li>
 					</ul>
 					<span class="vertical"></span>
 					<div class="footer-contacts">
@@ -311,6 +336,22 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("a.scrollto").click(function () {
+				var elementClick = $(this).attr("href");
+				var destination = $(elementClick).offset().top;
+				jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+				return false;
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){				
+			$(".group1").colorbox({rel:'group1'});
+		});
+	</script>
 </body>
 </html>
