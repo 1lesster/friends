@@ -441,6 +441,9 @@ footer .container{
 	.main-header .social{
 		margin-top: 20px;
 	}
+	.services .container .row:last-child .price:last-child {
+	    padding-top: 50px;
+	}
 }
 @media screen and (max-width: 600px){
 	section.start{
@@ -448,5 +451,11 @@ footer .container{
 	}
 	.start .contacts{
 		display: none;
+	}
+	h2{
+		font-size: 14px;
+	}
+	h2:after, h2:before{
+		margin: 0 15px;
 	}
 }
