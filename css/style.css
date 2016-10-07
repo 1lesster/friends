@@ -1,6 +1,5 @@
 body{
 	font-family: 'Open Sans', sans-serif;
-	min-width: 1280px;
 }
 *{
 	margin: 0;
@@ -363,6 +362,11 @@ footer .container{
 	}
 	.flex-container{
 		width: 100%;
+	}
+}
+@media screen and (max-width: 1280px){
+	section.start{
+		height: 530px;
 	}
 }
 @media screen and (max-width: 1200px){
