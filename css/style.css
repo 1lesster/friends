@@ -389,3 +389,64 @@ footer .container{
 		display: none;
 	}
 }
+@media screen and (max-width: 800px){
+	h2:after, h2:before{
+		width: 6%;
+	}
+	h2{
+		font-size: 16px;
+	}
+	.profession h2 {
+	    margin: 30px 0 30px;
+	}
+	section.profession{
+		padding-bottom: 30px;
+	}
+	#carousel-instagram{
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+	section.work p{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	footer .social,
+	.footer-logo,
+	.copy,
+	.header-logo,
+	.vertical{
+		display: none;
+	}
+	.footer-nav{
+		width: 100%;
+		text-align: center;
+	}
+	.footer-nav ul > li {
+	    display: inline-block;
+	    margin: 0 3px;
+	}
+	.footer-nav ul {
+	    display: block; 
+	    margin-bottom: 18px;
+	    text-align: center;
+	}
+	.flex-container{
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+	}
+	.main-header{
+		height: auto;
+	}
+	.main-header .social{
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 600px){
+	section.start{
+		height: 450px;
+	}
+	.start .contacts{
+		display: none;
+	}
+}
