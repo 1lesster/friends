@@ -155,7 +155,6 @@ footer .social > li:hover.fb{
 	width: 420px;
 	padding: 30px 0 15px 40px;
     background: rgba(11,185,183, .5);
-	height: 200px;
 }
 .start .contacts p{
 	color: #fff;
@@ -232,6 +231,10 @@ h3:after{
 	margin-left: 10px;
 	background-color: #0bb9b7;
 }
+p > a,
+p > a:hover{
+	color: #0bb9b7;
+}
 .price{
 	padding-bottom: 50px;
 }
@@ -244,6 +247,7 @@ h3:after{
 }
 .price div span:first-child{
 	float: left;
+	width: 80%;
 }
 .price div span:last-child{
 	float: right;
