@@ -231,10 +231,6 @@ h3:after{
 	margin-left: 10px;
 	background-color: #0bb9b7;
 }
-p > a,
-p > a:hover{
-	color: #0bb9b7;
-}
 .price{
 	padding-bottom: 50px;
 }
