@@ -395,8 +395,10 @@ footer .container{
 }
 .copy > a span:first-child{
 	display: inline-block;
-    width: 100px;
+    width: 70px;
     vertical-align: middle;
+    font-size: 10px;
+    color: #0bb9b7;
 }
 .services .container .row:last-child .price{
 	padding-bottom: 0;
@@ -507,10 +509,18 @@ footer .container{
 	.main-header{
 		bottom: 0;
 	}
+	#top-scroll{
+		display: none;
+	}
 }
 @media screen and (max-width: 600px){	
 	section.start{
 		background-position: -560px 0;
+	}
+	.main-nav > li{
+		display: block;
+		margin: 15px;
+		text-align: center;
 	}
 	.start .contacts{
 		display: none;
