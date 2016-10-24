@@ -426,11 +426,6 @@ footer .container{
 		width: 100%;
 	}
 }
-@media screen and (max-width: 1280px){
-	section.start{
-		height: 530px;
-	}
-}
 @media screen and (max-width: 1000px){
 	.portfolio .p-bot{
 		padding-bottom: 0;
@@ -514,6 +509,9 @@ footer .container{
 	}
 }
 @media screen and (max-width: 600px){	
+	section.start{
+		background-position: -560px 0;
+	}
 	.start .contacts{
 		display: none;
 	}
