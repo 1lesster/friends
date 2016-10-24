@@ -507,7 +507,7 @@ footer .container{
 		margin-top: 20px;
 	}
 	.main-header{
-		bottom: 0;
+		position: static;
 	}
 	#top-scroll{
 		display: none;
@@ -530,10 +530,5 @@ footer .container{
 	}
 	.main-header .social{
 		margin: 15px 0;
-	}
-}
-@media screen and (max-width: 400px){
-	.main-header{
-		bottom: 50px;
 	}
 }
