@@ -515,7 +515,7 @@ footer .container{
 }
 @media screen and (max-width: 600px){	
 	section.start{
-		background-position: -560px 0;
+		background-position: 50% 0;
 	}
 	.main-nav > li{
 		display: block;
