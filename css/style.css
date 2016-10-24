@@ -507,7 +507,7 @@ footer .container{
 		margin-top: 20px;
 	}
 	.main-header{
-		position: static;
+		bottom: 0;
 	}
 	#top-scroll{
 		display: none;
@@ -516,9 +516,12 @@ footer .container{
 @media screen and (max-width: 670px){
 	.main-nav > li{
 		display: block;
-		margin: 15px;
+		margin: 5px;
 		text-align: center;
-	}	
+	}
+	.main-header{
+		position: static;
+	}
 	.start .contacts{
 		display: none;
 	}
@@ -530,5 +533,10 @@ footer .container{
 	}
 	.main-header .social{
 		margin: 15px 0;
+	}
+}
+@media screen and (max-width: 400px){
+	.main-nav > li{
+		margin: 15px;
 	}
 }
