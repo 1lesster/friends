@@ -531,4 +531,7 @@ footer .container{
 	h2:after, h2:before{
 		margin: 0 15px;
 	}
+	.main-header .social{
+		margin: 15px 0;
+	}
 }
