@@ -513,10 +513,7 @@ footer .container{
 		bottom: 0;
 	}
 }
-@media screen and (max-width: 600px){
-	section.start{
-		height: 450px;
-	}
+@media screen and (max-width: 600px){	
 	.start .contacts{
 		display: none;
 	}
