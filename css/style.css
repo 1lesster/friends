@@ -1,5 +1,6 @@
 body{
 	font-family: 'Open Sans', sans-serif;
+	min-width: 800px;
 }
 *{
 	margin: 0;
@@ -202,9 +203,13 @@ h2.azure:before{
 	margin: 80px 0 45px;
 }
 h2.azure{
-	line-height: 60px;
-	background-color: #0bb9b7;
+	line-height: 60px;	
 	width: 100%;
+	background: rgb(11,185,183);
+	background: -moz-linear-gradient(left,  rgba(11,185,183,1) 0%, rgba(153,234,235,1) 100%);
+	background: -webkit-linear-gradient(left,  rgba(11,185,183,1) 0%,rgba(153,234,235,1) 100%);
+	background: linear-gradient(to right,  rgba(11,185,183,1) 0%,rgba(153,234,235,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0bb9b7', endColorstr='#99eaeb',GradientType=1 );
 }
 h3{
 	font-size: 22px;
@@ -268,7 +273,7 @@ h3:after{
 	font-size: 20px;
 	margin-left: -30px;
 	margin-top: -14px;
-}
+}/*
 #carousel-instagram{
 	margin-top: 60px;
 	margin-bottom: 85px;
@@ -293,6 +298,40 @@ h3:after{
 }
 #carousel-instagram .container{
 	padding: 0;
+}*/
+#instagram h2{
+	margin-bottom: 30px;
+}
+.instagram .insta-img{
+	width: 100%;	
+	object-fit: cover;
+	border: 1px solid #0bb9b7;
+}
+.instagram .img-box{
+	padding: 3px;
+	border: 1px solid #0bb9b7;
+	margin-bottom: 30px;
+}
+#top-scroll{
+	width: 92px;
+	height: 92px;
+	background: url('../img/scroll.png') -92px 0 no-repeat;
+	position: fixed;
+	right: 2%;
+	bottom: 200px;
+	z-index: 1000;
+	opacity: 0;
+	cursor: pointer;
+	-o-transition: opacity .7s;
+	-webkit-transition: opacity .7s;
+	-moz-transition: opacity .7s;
+	transition: opacity .7s;
+}
+#top-scroll:hover{
+	background-position: 0 0;
+}
+#top-scroll.is-show{
+	opacity: 1;
 }
 section.work p{
 	text-align: center;
@@ -300,13 +339,19 @@ section.work p{
 	padding-top: 40px;
 	padding-bottom: 70px;
 }
-footer{
-	background-color: #68d9d9;
-	padding: 15px 0;
+footer{	
+	padding: 25px 0;
+	background: rgb(11,185,183);
+	background: -moz-linear-gradient(left,  rgba(11,185,183,1) 0%, rgba(153,234,235,1) 100%);
+	background: -webkit-linear-gradient(left,  rgba(11,185,183,1) 0%,rgba(153,234,235,1) 100%);
+	background: linear-gradient(to right,  rgba(11,185,183,1) 0%,rgba(153,234,235,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0bb9b7', endColorstr='#99eaeb',GradientType=1 );
+}
+footer .social{
+	margin-top: -65px;
 }
 .footer-nav{
 	color: #fff;
-	padding: 10px 0;
 }
 .footer-nav ul > li{
 	display: block;
@@ -320,7 +365,7 @@ footer{
 .vertical{
 	content: '';
 	width: 3px;
-	height: 95px;
+	height: 110px;
 	background-color: #fff;
 	display: inline-block;
 	margin: 0 25px;
@@ -334,22 +379,41 @@ footer .container{
 }
 .footer-contacts{
 	display: inline-block;
+	vertical-align: top;
 }
 .footer-contacts > p{
 	margin-bottom: 0;
 }
 .copy{
 	position: absolute;
-	bottom: 10px;
+	bottom: 5px;
 	right: 30px;
 	color: #0bb9b7;
 }
 .copy a{
+	display: block;
+	color: #fff;
+}
+.copy > a span:first-child{
 	display: inline-block;
-	margin-left: 10px;
+    width: 100px;
+    vertical-align: middle;
 }
 .services .container .row:last-child .price{
 	padding-bottom: 0;
+}
+.copy .icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+	height: 29px;	
+	background: url('../img/copy-sprt.png') -50px 0 no-repeat; 
+}
+.copy > a:hover .icon{
+	background-position: 0px 0;
+}
+.copy > a:hover{
+	text-decoration: none;
 }
 /*RESPONSIVE*/
 @media screen and (max-width: 1500px) {
@@ -383,15 +447,16 @@ footer .container{
 	h3:after{
 		width: 10%;
 	}
-}
-@media screen and (max-width: 991px){
-	h3:after{
+	.header-logo{
 		display: none;
 	}
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 991px){
 	h2:after, h2:before{
 		width: 6%;
+	}
+	h3:after{
+		display: none;
 	}
 	h2{
 		font-size: 16px;
@@ -402,10 +467,10 @@ footer .container{
 	section.profession{
 		padding-bottom: 30px;
 	}
-	#carousel-instagram{
+	/*#carousel-instagram{
 		padding-top: 30px;
 		margin-bottom: 30px;
-	}
+	}*/
 	section.work p{
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -413,7 +478,6 @@ footer .container{
 	footer .social,
 	.footer-logo,
 	.copy,
-	.header-logo,
 	.vertical{
 		display: none;
 	}
@@ -437,12 +501,17 @@ footer .container{
 	}
 	.main-header{
 		height: auto;
+	}	
+	.services .container .row:last-child .price:last-child {
+	    padding-top: 50px;
 	}
+}
+@media screen and (max-width: 965px){
 	.main-header .social{
 		margin-top: 20px;
 	}
-	.services .container .row:last-child .price:last-child {
-	    padding-top: 50px;
+	.main-header{
+		bottom: 0;
 	}
 }
 @media screen and (max-width: 600px){
