@@ -518,10 +518,7 @@ footer .container{
 		display: block;
 		margin: 15px;
 		text-align: center;
-	}
-	.main-header{
-		bottom: 50px;
-	}
+	}	
 	.start .contacts{
 		display: none;
 	}
@@ -533,5 +530,10 @@ footer .container{
 	}
 	.main-header .social{
 		margin: 15px 0;
+	}
+}
+@media screen and (max-width: 400px){
+	.main-header{
+		bottom: 50px;
 	}
 }
