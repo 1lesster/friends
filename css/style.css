@@ -557,8 +557,23 @@ footer .container{
 	}
 	.main-header .social{
 		text-align: center;
+	    margin: 0;
+	    position: absolute;
+	    bottom: -100px;
+	    left: 50%;
+	    margin-left: -110px;
 	}
 	section.start{
+		overflow: hidden;
 		background-position-x: -400px;
+	}
+	.main-header{
+		bottom: 50%;
+		margin-bottom: -160px;
+	}
+	.logo{
+		display: block;
+		width: 112px;
+		margin: 30px auto 0;
 	}
 }
