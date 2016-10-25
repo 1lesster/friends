@@ -342,6 +342,9 @@ section.work p{
 	padding-top: 40px;
 	padding-bottom: 70px;
 }
+section.work p > a{
+	color: #000;
+}
 footer{	
 	padding: 25px 0;
 	background: rgb(11,185,183);
