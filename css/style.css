@@ -237,6 +237,9 @@ h3:after{
 	margin-left: 10px;
 	background-color: #0bb9b7;
 }
+#video .col-md-6{
+	margin-bottom: 30px;
+}
 .price{
 	padding-bottom: 50px;
 }
@@ -268,6 +271,7 @@ h3:after{
 .portfolio img{
 	width: 100%;
 	object-fit: cover;
+	object-position: center;
 }
 .video{
 	width: 100%;
@@ -313,7 +317,9 @@ h3:after{
 }
 .instagram .insta-img{
 	width: 100%;	
+	height: 250px;
 	object-fit: cover;
+	object-position: center;
 	border: 1px solid #0bb9b7;
 }
 .instagram .img-box{
@@ -442,7 +448,21 @@ footer .container{
 		width: 100%;
 	}
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
+	h3:after{
+		width: 10%;
+	}
+	.header-logo{
+		display: none;
+	}
+	.instagram .insta-img{
+		height: 212px;
+	}
+}
+@media screen and (max-width: 991px){
+	.instagram .insta-img {
+	    height: 15vw;
+	}
 	.portfolio .p-bot{
 		padding-bottom: 0;
 	}
@@ -452,16 +472,9 @@ footer .container{
 	.portfolio img{
 		height: 60vw;
 	}
-}
-@media screen and (max-width: 1200px){
-	h3:after{
-		width: 10%;
+	#video iframe{
+		height: 60vw !important;
 	}
-	.header-logo{
-		display: none;
-	}
-}
-@media screen and (max-width: 991px){
 	h2:after, h2:before{
 		width: 6%;
 	}
@@ -530,6 +543,11 @@ footer .container{
 		padding: 0;
 	}
 }
+@media screen and (max-width: 768px){
+	.instagram .insta-img {
+	    height: 60vw;
+	}
+}
 @media screen and (max-width: 670px){	
 	.start .contacts{
 		display: none;
@@ -546,6 +564,10 @@ footer .container{
 	.price > div,
 	h3{
 		padding: 0 10px;
+	}
+	.portfolio .col-md-3,
+	#video .col-md-6 {
+	    margin-bottom: 15px;
 	}
 }
 @media screen and (max-width: 570px){
