@@ -60,6 +60,7 @@ section.start{
 }
 .header-logo{
 	width: 218px;
+	visibility: hidden;
 }
 .header-logo a{
 	display: inline-block;
@@ -163,7 +164,6 @@ footer .social > li:hover.fb{
 	font-size: 16px;
 }
 section.profession{
-	border-top: 1px solid #222222;
 	-webkit-box-shadow:  0px -5px 8px -3px rgba(34, 34, 34, 0.75);
     -moz-box-shadow:     0px -5px 8px -3px rgba(34, 34, 34, 0.75);
     box-shadow:          0px -5px 8px -3px rgba(34, 34, 34, 0.75);
@@ -250,6 +250,14 @@ h3:after{
 .price div span:first-child{
 	float: left;
 	width: 80%;
+}
+.price.custom table{
+	width: 100%;
+	border-spacing: 0 10px;
+	border-collapse: separate;
+}
+.price.custom table tr td:last-child{
+	white-space: nowrap;
 }
 .price div span:last-child{
 	float: right;
