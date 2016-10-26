@@ -325,6 +325,7 @@ h3:after{
 	width: 92px;
 	height: 92px;
 	background: url('../img/scroll.png') -92px 0 no-repeat;
+	background-size: cover;
 	position: fixed;
 	right: 2%;
 	bottom: 200px;
