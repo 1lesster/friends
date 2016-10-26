@@ -256,6 +256,9 @@ h3:after{
 	border-spacing: 0 10px;
 	border-collapse: separate;
 }
+.price.custom table tr td{
+	font-size: 16px;
+}
 .price.custom table tr td:last-child{
 	white-space: nowrap;
 }
