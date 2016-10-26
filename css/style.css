@@ -261,6 +261,8 @@ h3:after{
 }
 .price.custom table tr td:last-child{
 	white-space: nowrap;
+	text-align: right;
+	vertical-align: bottom;
 }
 .price div span:last-child{
 	float: right;
