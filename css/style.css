@@ -244,28 +244,21 @@ h3:after{
 	font-size: 18px;
 }
 .price > div{
-	overflow: hidden;
 	padding: 0 25px;
 }
-.price div span:first-child{
-	float: left;
-	width: 80%;
-}
-.price.custom table{
+.price table{
 	width: 100%;
-	border-spacing: 0 10px;
+	border-spacing: 0 5px;
 	border-collapse: separate;
 }
-.price.custom table tr td{
+.price table tr td{
 	font-size: 16px;
 }
-.price.custom table tr td:last-child{
+.price table tr td:last-child{
 	white-space: nowrap;
 	text-align: right;
 	vertical-align: bottom;
-}
-.price div span:last-child{
-	float: right;
+	min-width: 40px;
 }
 .portfolio > h2,
 #video > h2{
