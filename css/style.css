@@ -543,6 +543,10 @@ footer .container{
 	.main-header .social{
 		margin: 15px 0;
 	}
+	.price > div,
+	h3{
+		padding: 0 10px;
+	}
 }
 @media screen and (max-width: 570px){
 	.main-nav > li > a{
