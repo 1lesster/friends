@@ -15,17 +15,16 @@ h1{
 	display: inline-block;
 }
 section.start{
-	background: url('../img/main-bg.jpg') 0 0 no-repeat;
-	background-size: cover;
+	background: url('../img/bg-min-lines.png') repeat;
 	height: 100vh;
 	position: relative;
 }
 .main-header{
 	height: 50px;
 	position: absolute;
-    bottom: 20px;
-    left: 50%;
-    margin-left: -750px;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.5);
 }
 .flex-container{
 	height: 100%;
@@ -88,6 +87,7 @@ ul{
 	display: inline-block;
 	width: 42px;
 	height: 46px;
+	vertical-align: middle;
 	margin: 0 5px;
 	-o-transition: all 0.2s;
 	-webkit-transition: all 0.2s;
@@ -157,7 +157,7 @@ footer .social > li:hover.fb{
 	bottom: 130px;
 	width: 420px;
 	padding: 30px 0 15px 40px;
-    background: rgba(11,185,183, .5);
+    background: rgba(0,0,0, .5);
 }
 .start .contacts p{
 	color: #fff;
@@ -356,7 +356,7 @@ section.work p{
 	padding-bottom: 70px;
 }
 section.work p > a{
-	color: #000;
+	color: #0bb9b7;
 }
 footer{	
 	padding: 25px 0;
@@ -576,6 +576,9 @@ footer .container{
 	}
 }
 @media screen and (max-width: 400px){
+	.main-header{
+		background: transparent;
+	}
 	.flex-container{
 		display: block;
 	}
