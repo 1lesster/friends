@@ -547,6 +547,9 @@ footer .container{
 	.instagram .insta-img {
 	    height: 60vw;
 	}
+	section.start{
+		background: url('../img/bg-min-lines2.png') repeat;
+	}
 }
 @media screen and (max-width: 670px){	
 	.start .contacts{
