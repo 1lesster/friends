@@ -137,7 +137,9 @@ footer .social > li.in{
 footer .social > li.fb{
 	background-position: -208px 0;
 }
-
+.footer-contacts a{
+	color: #fff;
+}
 footer .social > li:hover.map{
 	background-position: 7px -47px;
 }
