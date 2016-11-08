@@ -216,11 +216,25 @@ h2.azure{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0bb9b7', endColorstr='#99eaeb',GradientType=1 );
 }
 h3{
+	display: table;
 	font-size: 22px;
-	color: #0bb9b7;	
-	position: relative;
+	color: #0bb9b7;
 	margin-bottom: 10px;
 	padding: 0 25px;
+	font-weight: bold;
+}
+h3 > span{
+	white-space: nowrap;
+    display: table-cell;
+}
+h3 > span:first-child{
+	padding-right: 15px;
+}
+h3 > span.line{
+	width: 100%;
+	border-bottom: 3px solid #0bb9b7;
+	position: relative;
+	top: -7px;
 }
 .p-top{
 	padding-top: 55px;
@@ -228,22 +242,24 @@ h3{
 .p-bot{
 	padding-bottom: 30px;
 }
-h3:after{
-	content: '';
-	width: 30%;
-	height: 3px;
-	position: absolute;
-	top: 50%;
-	right: 25px;
-	vertical-align: middle;
-	margin-left: 10px;
-	background-color: #0bb9b7;
+.clear{
+	clear: both;
 }
+
 #video .col-md-6{
 	margin-bottom: 30px;
 }
-.price{
+br.hid{
+	display: none;
+}
+.price{	
 	padding-bottom: 50px;
+}
+.price > div > table{
+	padding-bottom: 30px;
+}
+.price > div:last-child > table{
+	padding-bottom: 0;
 }
 .price span{
 	font-size: 18px;
@@ -256,6 +272,12 @@ h3:after{
 	border-spacing: 0 5px;
 	border-collapse: separate;
 }
+span.eko{
+	font-weight: 100;
+	color: #0bb9b7;
+	font-style: italic;
+	font-size: 14px;
+}
 .price table tr td{
 	font-size: 16px;
 }
@@ -264,6 +286,8 @@ h3:after{
 	text-align: right;
 	vertical-align: bottom;
 	min-width: 40px;
+	color: #0bb9b7;
+	font-weight: bold;
 }
 .portfolio > h2,
 #video > h2{
@@ -529,6 +553,9 @@ footer .container{
 	}	
 	.services .container .row:last-child .price:last-child {
 	    padding-top: 50px;
+	}
+	.container .row > .price:last-child{
+		padding-bottom: 0;
 	}
 }
 @media screen and (max-width: 965px){
