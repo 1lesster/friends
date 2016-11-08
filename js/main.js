@@ -27,6 +27,6 @@ $(window).scroll(function(){
 });
 $(window).on("resize", function () {
     if(window.innerWidth < 800){
-        $(".group1").colorbox(return false);
+        $(".group1").colorbox({width: '100%', height: '100%'});
       }
 }).resize();
