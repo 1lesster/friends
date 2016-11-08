@@ -25,3 +25,8 @@ $(window).scroll(function(){
         sticky.removeClass('is-show');
     }
 });
+$(window).on("resize", function () {
+    if(window.innerWidth < 800){
+        $(".group1").colorbox(return false);
+      }
+}).resize();
